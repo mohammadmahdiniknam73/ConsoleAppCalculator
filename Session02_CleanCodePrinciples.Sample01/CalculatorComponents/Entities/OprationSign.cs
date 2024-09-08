@@ -8,9 +8,9 @@ namespace Session02_CleanCodePrinciples.Sample01.CalculatorComponents.Entities
 {
     public static class OprationSign
     {
-        public const string Sum = "+";
-        public const string Subtraction = "-";
-        public const string Divide = "/";
-        public const string Multiplication = "*";
+        public const char SUM = '+';
+        public const char SUBTRACTION = '-';
+        public const char DIVIDE = '/';
+        public const char MULTIPLICATION = '*';
     }
 }

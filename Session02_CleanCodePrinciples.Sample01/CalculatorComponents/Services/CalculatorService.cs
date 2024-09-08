@@ -15,19 +15,19 @@ namespace Session02_CleanCodePrinciples.Sample01.CalculatorComponents.Services
             int resultNumber;
             switch (calculator.OperationSign)
             {
-                case OprationSign.Multiplication:
+                case OprationSign.MULTIPLICATION:
                     resultNumber = _oprationService.Multiplication(calculator);
                     result = resultNumber.ToString();
                     break;
-                case OprationSign.Divide:
+                case OprationSign.DIVIDE:
                     resultNumber = _oprationService.Divide(calculator);
                     result = resultNumber.ToString();
                     break;
-                case OprationSign.Sum:
+                case OprationSign.SUM:
                     resultNumber = _oprationService.Sum(calculator);
                     result = resultNumber.ToString();
                     break;
-                case OprationSign.Subtraction:
+                case OprationSign.SUBTRACTION:
                     resultNumber = _oprationService.Subtraction(calculator);
                     result = resultNumber.ToString();
                     break;

@@ -4,6 +4,6 @@
     {
         public int FirstNumber { get; set; }
         public int SecoundNumber { get; set; }
-        public string OperationSign { get; set; }
+        public char OperationSign { get; set; }
     }
 }

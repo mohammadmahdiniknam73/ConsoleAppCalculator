@@ -22,8 +22,8 @@ namespace Session02_CleanCodePrinciples.Sample01
                 Console.WriteLine("Calculation failed"); 
             }
 
-            string operatorInput = GetValidatedOperator("Please Enter your operation sign (*, /, +, -):");
-            if (operatorInput == string.Empty)
+            char operatorInput = GetValidatedOperator("Please Enter your operation sign (*, /, +, -):");
+            if (operatorInput == char.MinValue)
             {
                 Console.WriteLine("Calculation failed");
             }
@@ -63,14 +63,15 @@ namespace Session02_CleanCodePrinciples.Sample01
             return number;
         }
 
-        private string GetValidatedOperator(string prompt)
+        private char GetValidatedOperator(string prompt)
         {
             Console.WriteLine(prompt);
             string input = Console.ReadLine();
-            string oprator = string.Empty;
+            char InputToChar = char.Parse(input);
+            char oprator = char.MinValue;
             if (_validator.ValidateOprationSign(input) == true)
             {
-                oprator = input;
+                oprator = InputToChar;
             }
             else
             {

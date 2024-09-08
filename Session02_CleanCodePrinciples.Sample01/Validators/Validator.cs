@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Session02_CleanCodePrinciples.Sample01.CalculatorComponents.Entities;
+using System;
 
 namespace Session02_CleanCodePrinciples.Sample01.Validators
 {
@@ -20,7 +21,7 @@ namespace Session02_CleanCodePrinciples.Sample01.Validators
         public bool ValidateOprationSign(string input)
         {
             bool result = false;
-            char[] allowedOperators = { '*', '/', '+', '-' };
+            char[] allowedOperators = { OprationSign.MULTIPLICATION, OprationSign.DIVIDE, OprationSign.SUM, OprationSign.SUBTRACTION };
 
             if (input.Length == 1 && Array.Exists(allowedOperators, element => element == input[0]))
             {
